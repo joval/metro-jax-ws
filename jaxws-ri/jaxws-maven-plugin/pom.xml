@@ -121,7 +121,7 @@
             <dependency>
                 <groupId>org.codehaus.plexus</groupId>
                 <artifactId>plexus-utils</artifactId>
-                <version>3.1.0</version>
+                <version>4.0.3</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.maven.plugin-tools</groupId>
@@ -397,8 +397,8 @@
                                 </goals>
                                 <configuration>
                                     <target>
-                                        <copy file="${project.build.directory}/${project.build.finalName}.jar" toFile="${project.build.directory}/${project.build.finalName}.jar.bkp" verbose="true" />
-                                        <copy file="${project.build.directory}/emma/${project.build.finalName}.jar" toDir="${project.build.directory}" overwrite="true" verbose="true" />
+                                        <copy file="${project.build.directory}/${project.build.finalName}.jar" toFile="${project.build.directory}/${project.build.finalName}.jar.bkp" verbose="true"/>
+                                        <copy file="${project.build.directory}/emma/${project.build.finalName}.jar" toDir="${project.build.directory}" overwrite="true" verbose="true"/>
                                     </target>
                                 </configuration>
                             </execution>
@@ -410,8 +410,8 @@
                                 </goals>
                                 <configuration>
                                     <target>
-                                        <copy file="${project.build.directory}/${project.build.finalName}.jar.bkp" toFile="${project.build.directory}/${project.build.finalName}.jar" overwrite="true" verbose="true" />
-                                        <delete file="${project.build.directory}/${project.build.finalName}.jar.bkp" verbose="true" />
+                                        <copy file="${project.build.directory}/${project.build.finalName}.jar.bkp" toFile="${project.build.directory}/${project.build.finalName}.jar" overwrite="true" verbose="true"/>
+                                        <delete file="${project.build.directory}/${project.build.finalName}.jar.bkp" verbose="true"/>
                                     </target>
                                 </configuration>
                             </execution>
